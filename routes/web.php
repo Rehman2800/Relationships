@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\StdDataController;
@@ -22,3 +23,5 @@ Route::get('/writer', [WriterController::class, 'show']);
 
 Route::get('/emp-role', [EmployeeController::class, 'show']);
 Route::get('/role-emp', [RoleController::class, 'show']);
+
+Route::get('/latestOrder', [CustomerController::class, 'show']);
