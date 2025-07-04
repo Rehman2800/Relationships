@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\StdDataController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\WriterController;
@@ -17,3 +19,6 @@ Route::get('student/inverse/data', [StdDataController::class, 'show']);
 
 
 Route::get('/writer', [WriterController::class, 'show']);
+
+Route::get('/emp-role', [EmployeeController::class, 'show']);
+Route::get('/role-emp', [RoleController::class, 'show']);
